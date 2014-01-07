@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.erpatcher</groupId>
 	<artifactId>erpatcher</artifactId>
 	<packaging>jar</packaging>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>ERPatcher Framework</name>
 
 	<properties>
@@ -130,5 +129,6 @@
 		<connection>scm:git:git@github.com:hprange/erpatcher.git</connection>
 		<url>scm:git:git@github.com:hprange/erpatcher.git</url>
 		<developerConnection>scm:git:git@github.com:hprange/erpatcher.git</developerConnection>
-	</scm>
+	  <tag>erpatcher-0.1</tag>
+  </scm>
 </project>
