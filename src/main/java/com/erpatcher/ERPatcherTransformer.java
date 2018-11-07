@@ -21,9 +21,28 @@ public class ERPatcherTransformer implements ClassFileTransformer {
     public ERPatcherTransformer() {
         classesMapping = new HashMap<String, String>();
 
-        classesMapping.put("com/webobjects/eocontrol/changeNotification/EOChangeNotificationOptions", "ERAttributeExtension");
         classesMapping.put("com/webobjects/eoaccess/EOAttribute$Characteristic", "ERAttributeExtension");
         classesMapping.put("com/webobjects/eoaccess/EOAttribute", "ERAttributeExtension");
+        classesMapping.put("com/webobjects/eocontrol/changeNotification/EOChangeNotificationOptions", "ERAttributeExtension");
+        classesMapping.put("com/webobjects/eocontrol/_EOCheapCopyArray", "ERExtensions");
+        classesMapping.put("com/webobjects/eocontrol/_EOCheapCopyMutableArray", "ERExtensions");
+        classesMapping.put("com/webobjects/eocontrol/_EOIntegralKeyGlobalID", "ERExtensions");
+        classesMapping.put("com/webobjects/appserver/WOCookie", "ERExtensions");
+        classesMapping.put("com/webobjects/appserver/_private/WOHostUtilities", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSArray", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSArray$_AvgNumberOperator", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSArray$_CountOperator", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSArray$_MaxOperator", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSArray$_MinOperator", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSArray$_Operator", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSArray$_SumNumberOperator", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSArray$Operator", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSDictionary", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSDictionary$_JavaNSDictionaryMapEntry", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSMutableArray", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSMutableDictionary", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSMutableSet", "ERExtensions");
+        classesMapping.put("com/webobjects/foundation/NSSet", "ERExtensions");
     }
 
     public ERPatcherTransformer(Map<String, String> classMapping) {
